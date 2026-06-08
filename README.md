@@ -19,7 +19,7 @@
 |---|---|---|
 | `PA1.py` | FASTQ | state machine으로 FASTQ를 파싱해 read 수 · 총 길이 · read length 분포(텍스트 + 막대그래프) 출력 |
 | `PA2.py` | SAM | FLAG bit로 properly-aligned read pair를 PE / MP로 분류, mean TLEN · orientation fraction · insert type 추정 |
-| `PA3.py` | VCF | QUAL ≥ 20 · DP ≥ 20 · AF = 1 필터 후 chromosome별 substitution / insertion / deletion 개수·길이 집계 (염색체 자연 정렬) |
+| `PA3.py` | VCF | QUAL ≥ 20 · DP ≥ 20 · AF = 1 필터 후 chromosome별 substitution / insertion / deletion 개수·길이 집계 (염색체 자연 정렬). 추가로 filtering funnel(필터 단계별 변이 잔존), Ti/Tv ratio, indel frameshift 비율 등 callset QC 지표 산출 |
 | `PA4.py` | GTF + STAR `ReadsPerGene.out.tab` ×2 | patients vs normals에서 TPM · median-of-ratios normalization · log2 fold change 계산 (DEG) |
 | `PA5.py` | FASTA | assembly 통계 — total length · sequence 수 · longest / shortest · N50 · length 분포 |
 
